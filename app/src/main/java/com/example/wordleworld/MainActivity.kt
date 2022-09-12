@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var editText = findViewById<EditText>(R.id.text_input)
+        val editText = findViewById<EditText>(R.id.text_input)
         val button = findViewById<Button>(R.id.guess_button)
-        var answer = findViewById<TextView>(R.id.answer)
+        val answer = findViewById<TextView>(R.id.answer)
         val input1 = findViewById<TextView>(R.id.input1)
         val input2 = findViewById<TextView>(R.id.input2)
         val input3 = findViewById<TextView>(R.id.input3)
@@ -30,30 +30,30 @@ class MainActivity : AppCompatActivity() {
         answer.visibility = View.GONE
 
 
-        var counter: Int = 0
+        var counter = 0
 
         button.setOnClickListener {
             counter = counter + 1
             if (counter == 1) {
-                var guess1 = editText.text.toString()
+                val guess1 = editText.text.toString()
                 input1.text = guess1
                 output1.text = guess1
                 editText.text.clear()
-                var checkFunction1 = checkGuess(guess1, wordToGuess)
+                val checkFunction1 = checkGuess(guess1, wordToGuess)
                 output1.text = checkFunction1
             }
             if (counter == 2) {
-                var guess2 = editText.text.toString()
+                val guess2 = editText.text.toString()
                 input2.text = guess2
                 editText.text.clear()
-                var checkFunction2 = checkGuess(guess2, wordToGuess)
+                val checkFunction2 = checkGuess(guess2, wordToGuess)
                 output2.text = checkFunction2
             }
             if (counter == 3) {
-                var guess3 = editText.text.toString()
+                val guess3 = editText.text.toString()
                 input3.text = guess3
                 editText.text.clear()
-                var checkFunction3 = checkGuess(guess3, wordToGuess)
+                val checkFunction3 = checkGuess(guess3, wordToGuess)
                 output3.text = checkFunction3
                 answer.visibility = View.VISIBLE
                 button.text = "RESET"
@@ -61,13 +61,16 @@ class MainActivity : AppCompatActivity() {
             }
             if (counter == 4) {
                 wordToGuess = FourLetterWordList.FourLetterWordList.getRandomFourLetterWord()
-                answer = wordToGuess
+                answer.text = wordToGuess
                 input1.text = ""
                 input2.text = ""
                 input3.text = ""
                 output1.text = ""
                 output2.text = ""
                 output3.text = ""
+                answer.visibility = View.INVISIBLE
+                editText.visibility = View.VISIBLE
+                button.text = "GUESS!"
                 counter = 0
             }
         }
