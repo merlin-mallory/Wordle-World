@@ -15,4 +15,14 @@
     <string name="guess_2_check">Guess #2 Check</string>
     <string name="guess_3">Guess #3</string>
     <string name="guess_1_check">Guess #1 Check</string>
+    <string name="input_a_four_character_word_and_press_quot_guess_quot_n_testing_n_test">Input a four-character word and press \"GUESS!\" \n Testing \n Test</string>
+    <string name="instructions">Instructions\n
+        1. Input a 4-character string (all-caps).\n
+        2. Press the "GUESS!" button.\n
+        3. Check your result. Did you correctly guess the word?\n
+        \n
+        O = You chose the correct character in the correct position.\n
+        + = You chose the correct character, but in the wrong position.\n
+        X = You chose a character that is not in the target word.\n
+    </string>
 </resources>
