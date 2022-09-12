@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Wordle World</string>
+    <string name="text_input">Text Input</string>
+    <string name="guess">Guess!</string>
+    <string name="answer">Answer</string>
+    <string name="output_3">Output #3</string>
+    <string name="input_3">Input #3</string>
+    <string name="output_2">Output #2</string>
+    <string name="input_2">Input #2</string>
+    <string name="output_1">Output #1</string>
+    <string name="input_1">Input#1</string>
+    <string name="guess_2">Guess #2</string>
+    <string name="guess_1">Guess #1</string>
+    <string name="guess_3_check">Guess #3 Check</string>
+    <string name="guess_2_check">Guess #2 Check</string>
+    <string name="guess_3">Guess #3</string>
+    <string name="guess_1_check">Guess #1 Check</string>
 </resources>
