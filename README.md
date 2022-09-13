@@ -33,10 +33,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="WordleWorld_demo.gif"> title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="WordleWorld_demo2.gif"> title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LICEcap  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -46,9 +46,11 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+The biggest challenge was attempting the "User can see the 'correctness' of their guess through colors on the word" stretch goal. I was able to figure out how to validate individual character, but I couldn't figure out how to colorize individual characters in a string. I think it would've been possible to divide the 3 output strings into 4 characters each, but it seemed like a hassle to individually colorize a total of 12 strings. I tried to find an easier way to colorize individual characters in a string, kinda like in HTML/CSS, but the solutions I found via Google were mostly for an older version of Java, instead of Kotlin. So I wasn't able to complete that stretch goal.
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Merlin Mallory]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
