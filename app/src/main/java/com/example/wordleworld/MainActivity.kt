@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 output1.text = ""
                 output2.text = ""
                 output3.text = ""
-                answer.visibility = View.INVISIBLE
+                answer.visibility = View.GONE
                 editText.visibility = View.VISIBLE
                 button.text = "GUESS!"
                 counter = 0
